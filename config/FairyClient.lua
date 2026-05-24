@@ -755,6 +755,13 @@ function handleClientDistributedFairyPlayer_setTalkWhisper(client, doId, fieldId
     dg:addUint32(doId)
     client:packFieldToDatagram(dg, "DistributedFairyPlayer", "setTalkWhisper", {avatarId, accountId, avatarName, cleanMessage, modifications, 0}, true)
     client:routeDatagram(dg)
+
+    --- (Fairies only) Send the sent message back to the sender
+    local sender = datagram:new()
+    sender:addUint16(CLIENT_OBJECT_UPDATE_FIELD)
+    sender:addUint32(doId)
+    client:packFieldToDatagram(sender, "DistributedFairyPlayer", "setTalkWhisper", {avatarId, accountId, avatarName, cleanMessage, modifications, 0}, true)
+    client:sendDatagram(sender)
 end
 
 -- Make sure these works for puppets as well.
