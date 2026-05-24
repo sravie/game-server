@@ -193,7 +193,7 @@ class DistributedFairyPlayerAI(DistributedFairyBaseAI):
                 if not aura_id:
                     print("ITEM A SILLY SWEET BUT NOT IN AURA MAPPING!")
                     return
-                
+
                 self.sendUpdateToAvatarId(self.doId, "setAura", [aura_id])
                 # Aura Task
                 taskMgr.doMethodLater(60, self.auraRemover, 'Aura Remover')
