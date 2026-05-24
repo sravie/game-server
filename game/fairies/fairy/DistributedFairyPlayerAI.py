@@ -2,6 +2,7 @@ from game.otp.otpbase import OTPGlobals
 
 from .DistributedFairyBaseAI import DistributedFairyBaseAI
 from game.fairies.ai.BakingAssets import BAKED_ITEMS
+from game.fairies.fairy.AuraMapping import AURA_MAPPING
 
 class DistributedFairyPlayerAI(DistributedFairyBaseAI):
     def __init__(self, air) -> None:
@@ -180,16 +181,24 @@ class DistributedFairyPlayerAI(DistributedFairyBaseAI):
             self.d_setPouch(pouch)
             self.d_setPouch(pouch)
 
-    def consumePouchItem(self, itemId, amount):
-        if itemId == 22543:
-            self.sendUpdateToAvatarId(self.doId, "setAura", [13])
+    def auraRemover(self, task):
+        self.sendUpdateToAvatarId(self.doId, "setAura", [0])
 
-        #baked = BAKED_ITEMS.get(itemId)
-       # if baked:
-            #if baked["bakedType"] == "sillysweet":
-             #   pass
-       # else:
-            #pass
+    def consumePouchItem(self, itemId, amount) -> None:
+        baked = BAKED_ITEMS.get(itemId)
+        if baked:
+            if baked["bakedType"] == "sillysweet":
+                aura_id = AURA_MAPPING.get(itemId)
+
+                if not aura_id:
+                    print("ITEM A SILLY SWEET BUT NOT IN AURA MAPPING!")
+                    return
+                
+                self.sendUpdateToAvatarId(self.doId, "setAura", [aura_id])
+                # Aura Task
+                taskMgr.doMethodLater(60, self.auraRemover, 'Aura Remover')
+        else:
+            pass
 
     def redrawFairy(self) -> None:
         self.sendUpdate("setRedraw", [1])
