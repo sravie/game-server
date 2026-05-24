@@ -3,6 +3,8 @@ from game.fairies.ai import FairiesConstants
 from game.fairies.fairy import FamousFairyData
 from game.fairies.fairy.structs.ShopCollection import ShopCollection
 from game.fairies.fairy.structs.ShopItem import ShopItem
+from game.fairies.fairy.structs.ShopOutfit import ShopOutfit
+from game.fairies.fairy.structs.OutfitItem import OutfitItem
 from game.fairies.shop.ShopHelpers import NPCShop, Shopkeeper
 
 TEST_SHOP_DATA = ShopCollection(collectionId=1, currencyId=1, items=[ShopItem(itemId=77515, price=100, goldPrice=100)])
@@ -507,7 +509,21 @@ SHOPS = [
             famousFairyId=FamousFairyData.FAMOUS_FAIRY_ERICA
         ),
         collections=[
-            TEST_SHOP_DATA
+            ShopCollection(
+                collectionId=2, # The Queen's Collections
+                outfits=[
+                    ShopOutfit(
+                        outfitId=1,
+                        items=[
+                            OutfitItem(itemId=2357, goldPrice=20, itemType="HeadItem"),
+                            OutfitItem(itemId=486, goldPrice=30, itemType="Shirt"),
+                            OutfitItem(itemId=1402, goldPrice=40, itemType="Skirt"),
+                            OutfitItem(itemId=643, goldPrice=10, itemType="Belt"),
+                            OutfitItem(itemId=3784, goldPrice=20, itemType="Shoes")
+                        ]
+                    )
+                ]
+            )
         ]
     ),
 

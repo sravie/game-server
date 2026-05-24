@@ -186,7 +186,7 @@ struct ShopCollection {
     int16 collectionId;
     int32 currencyId;
     ShopItem items[];
-    Shopoutfit outfits[];
+    ShopOutfit outfits[];
 };
 
 struct LiteShopItem {

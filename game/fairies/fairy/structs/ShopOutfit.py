@@ -1,22 +1,23 @@
 from __future__ import annotations
 
 from collections.abc import Sequence
+from dataclasses import dataclass, field
 
-from .ShopItem import ShopItem
+from .OutfitItem import OutfitItem
 
+@dataclass
 class ShopOutfit:
-    def __init__(self) -> None:
-        self.outfitId: int = 0
-        self.quality: int = 0
-        self.showInCatalog: int = 0
-        self.specialType: int = 0
-        self.status: int = 0
-        self.howAcquired: int = 0
-        self.createdById: int = 0
-        self.backgroundId: int = 0
-        self.modelId: int = 0
+    outfitId: int = 0
+    quality: int = 0
+    showInCatalog: int = 0
+    specialType: int = 0
+    status: int = 0
+    howAcquired: int = 0
+    createdById: int = 0
+    backgroundId: int = 0
+    modelId: int = 0
 
-        self.items: list[ShopItem] = []
+    items: list[OutfitItem] = field(default_factory=list)
 
     @classmethod
     def unpackFromTuple(cls, data: Sequence) -> ShopOutfit:
@@ -38,7 +39,7 @@ class ShopOutfit:
         ) = data
 
         outfit.items = [
-            ShopItem.unpackFromTuple(itemData)
+            OutfitItem.unpackFromTuple(itemData)
             for itemData in itemsData
         ]
 
