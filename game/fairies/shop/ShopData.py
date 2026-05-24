@@ -1378,10 +1378,10 @@ def getShopItemByIndex(shop: NPCShop, collectionId: int, itemIndex: int) -> Shop
 
     return None
 
-def getShopItemByOutfitId(shop: NPCShop, collectionId: int, outfitId: int) -> ShopItem | None:
+def getShopOutfitByOutfitId(shop: NPCShop, collectionId: int, outfitId: int) -> ShopOutfit | None:
     collection = shop.collectionsById.get(collectionId)
 
     if not collection:
         return None
 
-    return next((item for item in collection.outfits if item.outfitId == outfitId), None)
+    return next((outfit for outfit in collection.outfits if outfit.outfitId == outfitId), None)

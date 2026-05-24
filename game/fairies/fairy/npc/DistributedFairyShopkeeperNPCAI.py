@@ -6,7 +6,7 @@ from .DistributedFairyNPCAI import DistributedFairyNPCAI
 
 from game.fairies.fairy.structs.ShopCollection import ShopCollection
 
-from game.fairies.shop.ShopData import getShopByZone, getShopItemByOutfitId, getShopItemByIndex
+from game.fairies.shop.ShopData import getShopByZone, getShopOutfitByOutfitId, getShopItemByIndex
 
 PURCHASE_FAIL = 0
 PURCHASE_SUCCESS = 1
@@ -80,7 +80,8 @@ class DistributedFairyShopkeeperNPCAI(DistributedFairyNPCAI):
 
             if itemIndex == -1:
                 # Outfits have the amount set as the outfitId for some reason...
-                item = getShopItemByOutfitId(shop, collectionId, amount)
+                # TODO: Iterate through outfit items and handle purchase
+                outfit = getShopOutfitByOutfitId(shop, collectionId, amount)
             else:
                 item = getShopItemByIndex(shop, collectionId, itemIndex)
 
