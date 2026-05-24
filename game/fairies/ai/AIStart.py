@@ -52,7 +52,7 @@ for i in range(1, 20+1):
             postfix = '-%s' % i
         districtNumber = ConfigVariableInt(
             "district-id%s"%postfix,
-            200000000 + i*1000000).getValue()
+            200000000 + i * 1000000 + (i - 1)).getValue()
         districtName = ConfigVariableString(
             "district-name%s"%postfix,
             {
