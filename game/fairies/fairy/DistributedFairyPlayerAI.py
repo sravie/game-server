@@ -29,13 +29,13 @@ class DistributedFairyPlayerAI(DistributedFairyBaseAI):
 
         DistributedFairyBaseAI.delete(self)
 
-    def setDISLname(self, DISLname: str):
+    def setDISLname(self, DISLname: str) -> None:
         self.DISLname = DISLname
 
     def getDISLname(self) -> str:
         return self.DISLname
 
-    def setDISLid(self, DISLid: int) -> int:
+    def setDISLid(self, DISLid: int) -> None:
         self.air.sendFriendManagerAccountOnline(DISLid)
 
         self.DISLid = DISLid
@@ -43,7 +43,7 @@ class DistributedFairyPlayerAI(DistributedFairyBaseAI):
     def getDISLid(self) -> int:
         return self.DISLid
 
-    def setAccess(self, access) -> None:
+    def setAccess(self, access: int) -> None:
         self.access = access
 
         if self.isPaid():
@@ -289,3 +289,10 @@ class DistributedFairyPlayerAI(DistributedFairyBaseAI):
 
         # Dispatch a request to the OTP server to find out where this fairy is.
         self.air.getObjectLocation(fairyId, gotFairyLocation)
+
+    def setWhisperSCEmoteTo(self, toId: int, emoteId: int) -> None:
+        channelId = self.GetPuppetConnectionChannel(toId)
+
+        fromId = self.doId
+
+        self.air.sendUpdateToChannelFrom(self, channelId, "setWhisperSCEmoteFrom", fromId, [fromId, emoteId])

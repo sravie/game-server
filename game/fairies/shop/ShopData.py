@@ -387,7 +387,7 @@ SHOPS = [
                     ShopItem(itemId=2219, price=10, goldPrice=4, color1=55, color2=55, itemType="HeadItem"), # Pepper Black Racing Goggles
                     ShopItem(itemId=302, price=18, goldPrice=7, color1=48, color2=48, itemType="Shirt"), # Sea Green Rapid Racer Top
                     ShopItem(itemId=1264, price=18, goldPrice=7, color1=41, color2=41, itemType="Skirt"), # Moonshadow Blue Rapid Racer Knickers
-                    ShopItem(itemId=3678, price=13, goldPrice=5, color1=48, color2=48, itemType="Shoes"), # Sea Green Riding Boots 
+                    ShopItem(itemId=3678, price=13, goldPrice=5, color1=48, color2=48, itemType="Shoes"), # Sea Green Riding Boots
                 ],
             ),
             ShopCollection(
