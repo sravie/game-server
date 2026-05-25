@@ -807,7 +807,8 @@ SHOPS = [
                 collectionId=114, # The Queen's Collections (Blue)
                 outfits=[
                     ShopOutfit(
-                        outfitId=1030, # Fine Flowing Gown
+                        # For some reason 1030 throws a stale cache issue??
+                        outfitId=1031, # Fine Flowing Gown
                         items=[
                             OutfitItem(itemId=387, goldPrice=75, itemType="Shirt"),
                             OutfitItem(itemId=1313, goldPrice=0, itemType="Skirt"),
@@ -1313,6 +1314,148 @@ SHOPS = [
                     ShopItem(itemId=5578, price=10, goldPrice=2), # Rolled and Wavy Back
                     ShopItem(itemId=5587, price=10, goldPrice=2), # Long and Curly Twisties Back
                 ],
+            ),
+            ShopCollection(
+                collectionId=4014, # Hair Colors
+                currencyId=FairiesConstants.DAISY_PETALS,
+                items=[
+                    ShopItem(itemId=14055, price=10, goldPrice=1), # Pepper Black
+                    ShopItem(itemId=14073, price=10, goldPrice=1), # Grape Purple
+                    ShopItem(itemId=14141, price=10, goldPrice=1), # Thundercloud Gray
+                    ShopItem(itemId=14075, price=10, goldPrice=1), # Umber Brown
+                    ShopItem(itemId=14074, price=10, goldPrice=1), # Soil Brown
+                    ShopItem(itemId=14191, price=10, goldPrice=1), # Vidia Black
+                    ShopItem(itemId=14177, price=10, goldPrice=1), # Mud Brown
+                    ShopItem(itemId=14076, price=10, goldPrice=1), # Chocolate Brown
+                    ShopItem(itemId=14077, price=10, goldPrice=1), # Sepia Brown
+                    ShopItem(itemId=14078, price=10, goldPrice=1), # Fawn Brown
+                    ShopItem(itemId=14079, price=10, goldPrice=1), # Sienna Brown
+                    ShopItem(itemId=14092, price=10, goldPrice=1), # Hawk Brown
+                    ShopItem(itemId=14057, price=10, goldPrice=1), # Adobe Brown
+                    ShopItem(itemId=14117, price=10, goldPrice=1), # Amethyst Purple
+                    ShopItem(itemId=14043, price=10, goldPrice=1), # Violet Purple
+                    ShopItem(itemId=14183, price=10, goldPrice=1), # Vidia Purple
+                    ShopItem(itemId=14197, price=10, goldPrice=1), # Electric Purple
+                    ShopItem(itemId=14080, price=10, goldPrice=1), # Pomegranate Purple
+                    ShopItem(itemId=14081, price=10, goldPrice=1), # Crimson Red
+                    ShopItem(itemId=14189, price=10, goldPrice=1), # Ladybug Red
+                    ShopItem(itemId=14174, price=10, goldPrice=1), # Rosetta Red
+                    ShopItem(itemId=14045, price=10, goldPrice=1), # Strawberry Red
+                    ShopItem(itemId=14082, price=10, goldPrice=1), # Raspberry Red
+                    ShopItem(itemId=14113, price=10, goldPrice=1), # Pale Rose Red
+                    ShopItem(itemId=14083, price=10, goldPrice=1), # Cherry Brown
+                    ShopItem(itemId=14114, price=10, goldPrice=1), # Foxtail Orange
+                    ShopItem(itemId=14013, price=10, goldPrice=1), # Coral Pink
+                    ShopItem(itemId=14181, price=10, goldPrice=1), # Cupcake Pink
+                    ShopItem(itemId=14008, price=10, goldPrice=1), # Watermelon Pink
+                    ShopItem(itemId=14121, price=10, goldPrice=1), # Daisy Pink
+                    ShopItem(itemId=14084, price=10, goldPrice=1), # Copper Brown
+                    ShopItem(itemId=14046, price=10, goldPrice=1), # Bark Brown
+                    ShopItem(itemId=14095, price=10, goldPrice=1), # Sparrow Brown
+                    ShopItem(itemId=14028, price=10, goldPrice=1), # Cinnamon Brown
+                    ShopItem(itemId=14086, price=10, goldPrice=1), # Nutmeg Brown
+                    ShopItem(itemId=14085, price=10, goldPrice=1), # Quail Brown
+                    ShopItem(itemId=14087, price=10, goldPrice=1), # Driftwood Brown
+                    ShopItem(itemId=14187, price=10, goldPrice=1), # Maple Orange
+                    ShopItem(itemId=14171, price=10, goldPrice=1), # Sunrise Yellow
+                    ShopItem(itemId=14067, price=10, goldPrice=1), # Chartreuse Green
+                    ShopItem(itemId=14048, price=10, goldPrice=1), # Sea Green
+                    ShopItem(itemId=14193, price=10, goldPrice=1), # Electric Green
+                    ShopItem(itemId=14145, price=10, goldPrice=1), # Tinker Bell Green
+                    ShopItem(itemId=14125, price=10, goldPrice=1), # Pine Green
+                    ShopItem(itemId=14182, price=10, goldPrice=1), # Twilight Blue
+                    ShopItem(itemId=14136, price=10, goldPrice=1), # Peacock Blue
+                    ShopItem(itemId=14176, price=10, goldPrice=1), # Silvermist Blue
+                    ShopItem(itemId=14180, price=10, goldPrice=1), # Seashell Blue
+                    ShopItem(itemId=14195, price=10, goldPrice=1), # Electric Blue
+                    ShopItem(itemId=14006, price=10, goldPrice=1), # Havendish Blue
+                    ShopItem(itemId=14163, price=10, goldPrice=1), # Tundra Blue
+                    ShopItem(itemId=14089, price=10, goldPrice=1), # Seashore Brown
+                    ShopItem(itemId=14161, price=10, goldPrice=1), # Buried Treasure Brown
+                    ShopItem(itemId=14088, price=10, goldPrice=1), # Fruitwood Brown
+                    ShopItem(itemId=14196, price=10, goldPrice=1), # Electric Orange
+                    ShopItem(itemId=14178, price=10, goldPrice=1), # Fawn Orange
+                    ShopItem(itemId=14179, price=10, goldPrice=1), # Iridessa Yellow
+                    ShopItem(itemId=14186, price=10, goldPrice=1), # Honeycomb Yellow
+                    ShopItem(itemId=14027, price=10, goldPrice=1), # Corn Cob Yellow
+                    ShopItem(itemId=14162, price=10, goldPrice=1), # Sunglow Yellow
+                    ShopItem(itemId=14090, price=10, goldPrice=1), # Custard Yellow
+                    ShopItem(itemId=14116, price=10, goldPrice=1), # Mushroom White
+                    ShopItem(itemId=14109, price=10, goldPrice=1), # Soft Orange
+                    ShopItem(itemId=14111, price=10, goldPrice=1), # Sparkling Yellow
+                    ShopItem(itemId=14166, price=10, goldPrice=1), # Snow White
+                ]
+            ),
+            ShopCollection(
+                collectionId=4015, # Highlights 
+                currencyId=FairiesConstants.DAISY_PETALS,
+                items=[
+                    ShopItem(itemId=14055, price=10, goldPrice=1, specialType=2), # Pepper Black
+                    ShopItem(itemId=14073, price=10, goldPrice=1, specialType=2), # Grape Purple
+                    ShopItem(itemId=14141, price=10, goldPrice=1, specialType=2), # Thundercloud Gray
+                    ShopItem(itemId=14075, price=10, goldPrice=1, specialType=2), # Umber Brown
+                    ShopItem(itemId=14074, price=10, goldPrice=1, specialType=2), # Soil Brown
+                    ShopItem(itemId=14191, price=10, goldPrice=1, specialType=2), # Vidia Black
+                    ShopItem(itemId=14177, price=10, goldPrice=1, specialType=2), # Mud Brown
+                    ShopItem(itemId=14076, price=10, goldPrice=1, specialType=2), # Chocolate Brown
+                    ShopItem(itemId=14077, price=10, goldPrice=1, specialType=2), # Sepia Brown
+                    ShopItem(itemId=14078, price=10, goldPrice=1, specialType=2), # Fawn Brown
+                    ShopItem(itemId=14079, price=10, goldPrice=1, specialType=2), # Sienna Brown
+                    ShopItem(itemId=14092, price=10, goldPrice=1, specialType=2), # Hawk Brown
+                    ShopItem(itemId=14057, price=10, goldPrice=1, specialType=2), # Adobe Brown
+                    ShopItem(itemId=14117, price=10, goldPrice=1, specialType=2), # Amethyst Purple
+                    ShopItem(itemId=14043, price=10, goldPrice=1, specialType=2), # Violet Purple
+                    ShopItem(itemId=14183, price=10, goldPrice=1, specialType=2), # Vidia Purple
+                    ShopItem(itemId=14197, price=10, goldPrice=1, specialType=2), # Electric Purple
+                    ShopItem(itemId=14080, price=10, goldPrice=1, specialType=2), # Pomegranate Purple
+                    ShopItem(itemId=14081, price=10, goldPrice=1, specialType=2), # Crimson Red
+                    ShopItem(itemId=14189, price=10, goldPrice=1, specialType=2), # Ladybug Red
+                    ShopItem(itemId=14174, price=10, goldPrice=1, specialType=2), # Rosetta Red
+                    ShopItem(itemId=14045, price=10, goldPrice=1, specialType=2), # Strawberry Red
+                    ShopItem(itemId=14082, price=10, goldPrice=1, specialType=2), # Raspberry Red
+                    ShopItem(itemId=14113, price=10, goldPrice=1, specialType=2), # Pale Rose Red
+                    ShopItem(itemId=14083, price=10, goldPrice=1, specialType=2), # Cherry Brown
+                    ShopItem(itemId=14114, price=10, goldPrice=1, specialType=2), # Foxtail Orange
+                    ShopItem(itemId=14013, price=10, goldPrice=1, specialType=2), # Coral Pink
+                    ShopItem(itemId=14181, price=10, goldPrice=1, specialType=2), # Cupcake Pink
+                    ShopItem(itemId=14008, price=10, goldPrice=1, specialType=2), # Watermelon Pink
+                    ShopItem(itemId=14121, price=10, goldPrice=1, specialType=2), # Daisy Pink
+                    ShopItem(itemId=14084, price=10, goldPrice=1, specialType=2), # Copper Brown
+                    ShopItem(itemId=14046, price=10, goldPrice=1, specialType=2), # Bark Brown
+                    ShopItem(itemId=14095, price=10, goldPrice=1, specialType=2), # Sparrow Brown
+                    ShopItem(itemId=14028, price=10, goldPrice=1, specialType=2), # Cinnamon Brown
+                    ShopItem(itemId=14086, price=10, goldPrice=1, specialType=2), # Nutmeg Brown
+                    ShopItem(itemId=14085, price=10, goldPrice=1, specialType=2), # Quail Brown
+                    ShopItem(itemId=14087, price=10, goldPrice=1, specialType=2), # Driftwood Brown
+                    ShopItem(itemId=14187, price=10, goldPrice=1, specialType=2), # Maple Orange
+                    ShopItem(itemId=14171, price=10, goldPrice=1, specialType=2), # Sunrise Yellow
+                    ShopItem(itemId=14067, price=10, goldPrice=1, specialType=2), # Chartreuse Green
+                    ShopItem(itemId=14048, price=10, goldPrice=1, specialType=2), # Sea Green
+                    ShopItem(itemId=14193, price=10, goldPrice=1, specialType=2), # Electric Green
+                    ShopItem(itemId=14145, price=10, goldPrice=1, specialType=2), # Tinker Bell Green
+                    ShopItem(itemId=14125, price=10, goldPrice=1, specialType=2), # Pine Green
+                    ShopItem(itemId=14182, price=10, goldPrice=1, specialType=2), # Twilight Blue
+                    ShopItem(itemId=14136, price=10, goldPrice=1, specialType=2), # Peacock Blue
+                    ShopItem(itemId=14176, price=10, goldPrice=1, specialType=2), # Silvermist Blue
+                    ShopItem(itemId=14180, price=10, goldPrice=1, specialType=2), # Seashell Blue
+                    ShopItem(itemId=14195, price=10, goldPrice=1, specialType=2), # Electric Blue
+                    ShopItem(itemId=14006, price=10, goldPrice=1, specialType=2), # Havendish Blue
+                    ShopItem(itemId=14163, price=10, goldPrice=1, specialType=2), # Tundra Blue
+                    ShopItem(itemId=14089, price=10, goldPrice=1, specialType=2), # Seashore Brown
+                    ShopItem(itemId=14161, price=10, goldPrice=1, specialType=2), # Buried Treasure Brown
+                    ShopItem(itemId=14088, price=10, goldPrice=1, specialType=2), # Fruitwood Brown
+                    ShopItem(itemId=14196, price=10, goldPrice=1, specialType=2), # Electric Orange
+                    ShopItem(itemId=14178, price=10, goldPrice=1, specialType=2), # Fawn Orange
+                    ShopItem(itemId=14179, price=10, goldPrice=1, specialType=2), # Iridessa Yellow
+                    ShopItem(itemId=14186, price=10, goldPrice=1, specialType=2), # Honeycomb Yellow
+                    ShopItem(itemId=14027, price=10, goldPrice=1, specialType=2), # Corn Cob Yellow
+                    ShopItem(itemId=14162, price=10, goldPrice=1, specialType=2), # Sunglow Yellow
+                    ShopItem(itemId=14090, price=10, goldPrice=1, specialType=2), # Custard Yellow
+                    ShopItem(itemId=14116, price=10, goldPrice=1, specialType=2), # Mushroom White
+                    ShopItem(itemId=14109, price=10, goldPrice=1, specialType=2), # Soft Orange
+                    ShopItem(itemId=14111, price=10, goldPrice=1, specialType=2), # Sparkling Yellow
+                    ShopItem(itemId=14166, price=10, goldPrice=1, specialType=2), # Snow White
+                ]
             )
         ],
     ),

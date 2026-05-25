@@ -598,6 +598,87 @@ GATEWAYS: dict[int, list[dict]] = {
             "targetZoneID": ZoneConstants.ACORN_SUMMIT,
         },
     ],
+    # Pumpkin Patch
+
+    # ════════════════════════════════════════════════════════════════════════════════════ #
+    #                                    Spring Gateways                                   #
+    # ════════════════════════════════════════════════════════════════════════════════════ #
+    ZoneConstants.SPRINGTIME_ORCHARD:[
+        {
+            # Bobbin's Tailoring Nook
+            "name": "9011",
+            "position": (365, 765),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.BOBBINS_TAILORING,
+        },
+        {
+            # Firefly Light Up
+            "name": "9009",
+            "position": (1460, 853),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.FIREFLY_LIGHT_UP_GAME,
+            "rewardList": [fc.IVY, fc.MEADOW_GRASS, fc.SUNFLOWER_SEEDS]
+        },
+        {
+            # Dewdrop Vale
+            "name": "9048",
+            "position": (1730, 750),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.DEWDROP_VALE,
+        },
+        {
+            # Havendish
+            "name": "9170",
+            "position": (0, 450),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.HAVENDISH_SQUARE,
+        },
+        {
+            # Beck's
+            "name": "9203",
+            "position": (402, 338),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.BECKS_ANIMAL_NURSERY,
+        },
+        {
+            # CherryBlossom Heights
+            "name": "9037",
+            "position": (1255, 255),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.CHERRYBLOSSOM_HEIGHTS,
+        },
+    ],
+    ZoneConstants.NEVERBERRY_THICKET: [
+        {
+            # Dewdrop Vale
+            "name": "9050",
+            "position": (250, 850),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.DEWDROP_VALE,
+        },
+        {
+            # Dulcie's Baking
+            "name": "9155",
+            "position": (850, 710),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.DULCIES_BAKING,
+        },
+        {
+            # Elixa's
+            "name": "9205",
+            "position": (1646, 595),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.ELIXAS_HOSPITAL,
+        },
+        {
+            # Water Web
+            "name": "9013",
+            "position": (1750, 705),
+            "targetLocationName": "",
+            "targetZoneID": ZoneConstants.WATER_WEB_GAME,
+            "rewardList": [fc.LILY_PETALS, fc.MEADOW_GRASS, fc.SPIDER_SILK]
+        },
+    ]
     
 }
 
