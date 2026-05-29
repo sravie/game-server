@@ -38,42 +38,42 @@ SHOPS = [
                 collectionId=82, # Floral Collections
                 currencyId=FairiesConstants.MAPLE_LEAVES,
                 items=[
-                    ShopItem(itemId=2427, price=15, goldPrice=3, color1=201, color2=201, itemType="HeadItem"), # Velvet Red Hydrangea Barrette
-                    ShopItem(itemId=1000058, price=25, goldPrice=5, color1=201, color2=201, itemType="Shirt"), # Velvet Red Hydrangea Top
-                    ShopItem(itemId=1465, price=25, goldPrice=5, color1=201, color2=201, itemType="Skirt"), # Velvet Red Hydrangea Skirt
-                    ShopItem(itemId=3846, price=15, goldPrice=3, color1=201, color2=201, itemType="Shoes"), # Velvet Red Hydrangea Heels
-                    ShopItem(itemId=2284, price=15, goldPrice=3, color1=166, color2=166, itemType="HeadItem"), # Snow White Snowdrop Headband
-                    ShopItem(itemId=343, price=25, goldPrice=5, color1=166, color2=166, itemType="Shirt"), # Snow White Snowdrop Top
-                    ShopItem(itemId=629, price=5, goldPrice=1, color1=166, color2=166, itemType="Belt"), # Snow White Snowdrop Sash
-                    ShopItem(itemId=1280, price=25, goldPrice=5, color1=166, color2=166, itemType="Skirt"), # Snow White Snowdrop Skirt
-                    ShopItem(itemId=3704, price=15, goldPrice=3, color1=166, color2=166, itemType="Shoes"), # Snow White Snowdrop Shoes
-                    ShopItem(itemId=2292, price=15, goldPrice=3, color1=208, color2=208, itemType="HeadItem"), # Cerulean Blue Hanami Headpiece
-                    ShopItem(itemId=377, price=25, goldPrice=5, color1=208, color2=208, itemType="Shirt"), # Cerulean Blue Hanami Top
-                    ShopItem(itemId=636, price=5, goldPrice=1, color1=29, color2=29, itemType="Belt"), # Deep Sea Blue Hanami Sash
-                    ShopItem(itemId=1300, price=25, goldPrice=5, color1=208, color2=208, itemType="Skirt"), # Cerulean Blue Hanami Long Skirt
-                    ShopItem(itemId=3717, price=15, goldPrice=5, color1=267, color2=267, itemType="Shoes"), # Celestial Blue Hanami Geta Shoes
-                    ShopItem(itemId=2292, price=15, goldPrice=3, color1=81, color2=81, itemType="HeadItem"), # Crimson Red Hanami Headpiece
-                    ShopItem(itemId=377, price=25, goldPrice=5, color1=199, color2=199, itemType="Shirt"), # Cherryblossom Pink Hanami Top
-                    ShopItem(itemId=636, price=5, goldPrice=1, color1=81, color2=81, itemType="Belt"), # Crimson Red Hanami Sash
-                    ShopItem(itemId=1295, price=25, goldPrice=5, color1=199, color2=199, itemType="Skirt"), # Cherryblossom Pink Hanami Short Skirt
-                    ShopItem(itemId=3717, price=15, goldPrice=3, color1=81, color2=81, itemType="Shoes"), # Crimson Red Hanami Geta Shoes
-                    ShopItem(itemId=2449, price=15, goldPrice=3, color1=267, color2=267, itemType="HeadItem"), # Celestial Blue Azalea Barrette
-                    ShopItem(itemId=1000074, price=25, goldPrice=5, color1=10, color2=10, itemType="Shirt"), # Cantaloupe Orange Azalea Top
-                    ShopItem(itemId=1481, price=25, goldPrice=5, color1=10, color2=10, itemType="Skirt"), # Cantaloupe Orange Azalea Skirt
-                    ShopItem(itemId=3866, price=15, goldPrice=3, color1=10, color2=10, itemType="Shoes"), # Cantaloupe Orange Azalea Sandals
-                    ShopItem(itemId=385, price=25, goldPrice=5, color1=287, color2=287, itemType="Shirt"), # Dianthus Red Dianthus Blouse
-                    ShopItem(itemId=1305, price=25, goldPrice=5, color1=287, color2=287, itemType="Skirt"), # Dianthus Red Dianthus Skirt
-                    ShopItem(itemId=3722, price=15, goldPrice=3, color1=287, color2=287, itemType="Shoes"), # Dianthus Red Dianthus Shoes
-                    ShopItem(itemId=2336, price=15, goldPrice=3, color1=186, color2=186, itemType="HeadItem"), # Honeycomb Yellow Flame Lily Barrette
-                    ShopItem(itemId=417, price=25, goldPrice=5, color1=186, color2=186, itemType="Shirt"), # Honeycomb Yellow Flame Lily Top
-                    ShopItem(itemId=1335, price=25, goldPrice=5, color1=186, color2=186, itemType="Skirt"), # Honeycomb Yellow Flame Lily Skirt
-                    ShopItem(itemId=3758, price=15, goldPrice=3, color1=186, color2=186, itemType="Shoes"), # Honeycomb Yellow Flame Lily Shoes
-                    ShopItem(itemId=2348, price=15, goldPrice=3, color1=130, color2=130, itemType="HeadItem"), # Orchid Pink Chrysanthemum Beret
-                    ShopItem(itemId=477, price=25, goldPrice=5, color1=224, color2=224, itemType="Shirt"), # Ivory White Chrysanthemum Top
-                    ShopItem(itemId=640, price=5, goldPrice=1, color1=81, color2=81, itemType="Belt"), # Crimson Red Chrysanthemum Belt
-                    ShopItem(itemId=1396, price=25, goldPrice=5, color1=206, color2=206, itemType="Skirt"), # Raven Black Chrysanthemum Skirt
-                    ShopItem(itemId=3779, price=15, goldPrice=3, color1=81, color2=81, itemType="Shoes"), # Crimson Red Chrysanthemum Shoes
-                    ShopItem(itemId=2356, price=15, goldPrice=3, color1=153, color2=153, itemType="HeadItem"), # Frostbunny Blue Bead Cascade Earrings
+                    ShopItem(itemId=2427, price=15, goldPrice=3, color1=201, color2=121, itemType="HeadItem"), # Velvet Red Hydrangea Barrette
+                    ShopItem(itemId=1000058, price=25, goldPrice=5, color1=201, color2=121, itemType="Shirt"), # Velvet Red Hydrangea Top
+                    ShopItem(itemId=1465, price=25, goldPrice=5, color1=201, color2=121, itemType="Skirt"), # Velvet Red Hydrangea Skirt
+                    ShopItem(itemId=3846, price=15, goldPrice=3, color1=201, color2=121, itemType="Shoes"), # Velvet Red Hydrangea Heels
+                    ShopItem(itemId=2284, price=15, goldPrice=3, color1=166, color2=1, itemType="HeadItem"), # Snow White Snowdrop Headband
+                    ShopItem(itemId=343, price=25, goldPrice=5, color1=166, color2=1, itemType="Shirt"), # Snow White Snowdrop Top
+                    ShopItem(itemId=629, price=5, goldPrice=1, color1=166, color2=1, itemType="Belt"), # Snow White Snowdrop Sash
+                    ShopItem(itemId=1280, price=25, goldPrice=5, color1=166, color2=1, itemType="Skirt"), # Snow White Snowdrop Skirt
+                    ShopItem(itemId=3704, price=15, goldPrice=3, color1=166, color2=1, itemType="Shoes"), # Snow White Snowdrop Shoes
+                    ShopItem(itemId=2292, price=15, goldPrice=3, color1=208, color2=267, itemType="HeadItem"), # Cerulean Blue Hanami Headpiece
+                    ShopItem(itemId=377, price=25, goldPrice=5, color1=208, color2=267, itemType="Shirt"), # Cerulean Blue Hanami Top
+                    ShopItem(itemId=636, price=5, goldPrice=1, color1=209, color2=267, itemType="Belt"), # Deep Sea Blue Hanami Sash
+                    ShopItem(itemId=1300, price=25, goldPrice=5, color1=208, color2=267, itemType="Skirt"), # Cerulean Blue Hanami Long Skirt
+                    ShopItem(itemId=3717, price=15, goldPrice=5, color1=267, color2=98, itemType="Shoes"), # Celestial Blue Hanami Geta Shoes
+                    ShopItem(itemId=2292, price=15, goldPrice=3, color1=81, color2=26, itemType="HeadItem"), # Crimson Red Hanami Headpiece
+                    ShopItem(itemId=377, price=25, goldPrice=5, color1=199, color2=26, itemType="Shirt"), # Cherryblossom Pink Hanami Top
+                    ShopItem(itemId=636, price=5, goldPrice=1, color1=81, color2=26, itemType="Belt"), # Crimson Red Hanami Sash
+                    ShopItem(itemId=1295, price=25, goldPrice=5, color1=199, color2=26, itemType="Skirt"), # Cherryblossom Pink Hanami Short Skirt
+                    ShopItem(itemId=3717, price=15, goldPrice=3, color1=81, color2=98, itemType="Shoes"), # Crimson Red Hanami Geta Shoes
+                    ShopItem(itemId=2449, price=15, goldPrice=3, color1=267, color2=10, itemType="HeadItem"), # Celestial Blue Azalea Barrette
+                    ShopItem(itemId=1000074, price=25, goldPrice=5, color1=10, color2=267, itemType="Shirt"), # Cantaloupe Orange Azalea Top
+                    ShopItem(itemId=1481, price=25, goldPrice=5, color1=10, color2=267, itemType="Skirt"), # Cantaloupe Orange Azalea Skirt
+                    ShopItem(itemId=3866, price=15, goldPrice=3, color1=10, color2=267, itemType="Shoes"), # Cantaloupe Orange Azalea Sandals
+                    ShopItem(itemId=385, price=25, goldPrice=5, color1=287, color2=166, itemType="Shirt"), # Dianthus Red Dianthus Blouse
+                    ShopItem(itemId=1305, price=25, goldPrice=5, color1=287, color2=166, itemType="Skirt"), # Dianthus Red Dianthus Skirt
+                    ShopItem(itemId=3722, price=15, goldPrice=3, color1=287, color2=166, itemType="Shoes"), # Dianthus Red Dianthus Shoes
+                    ShopItem(itemId=2336, price=15, goldPrice=3, color1=186, color2=230, itemType="HeadItem"), # Honeycomb Yellow Flame Lily Barrette
+                    ShopItem(itemId=417, price=25, goldPrice=5, color1=186, color2=230, itemType="Shirt"), # Honeycomb Yellow Flame Lily Top
+                    ShopItem(itemId=1335, price=25, goldPrice=5, color1=186, color2=230, itemType="Skirt"), # Honeycomb Yellow Flame Lily Skirt
+                    ShopItem(itemId=3758, price=15, goldPrice=3, color1=186, color2=230, itemType="Shoes"), # Honeycomb Yellow Flame Lily Shoes
+                    ShopItem(itemId=2348, price=15, goldPrice=3, color1=130, color2=81, itemType="HeadItem"), # Orchid Pink Chrysanthemum Beret
+                    ShopItem(itemId=477, price=25, goldPrice=5, color1=224, color2=81, itemType="Shirt"), # Ivory White Chrysanthemum Top
+                    ShopItem(itemId=640, price=5, goldPrice=1, color1=81, color2=130, itemType="Belt"), # Crimson Red Chrysanthemum Belt
+                    ShopItem(itemId=1396, price=25, goldPrice=5, color1=206, color2=81, itemType="Skirt"), # Raven Black Chrysanthemum Skirt
+                    ShopItem(itemId=3779, price=15, goldPrice=3, color1=81, color2=130, itemType="Shoes"), # Crimson Red Chrysanthemum Shoes
+                    ShopItem(itemId=2356, price=15, goldPrice=3, color1=153, color2=162, itemType="HeadItem"), # Frostbunny Blue Bead Cascade Earrings
                     ShopItem(itemId=483, price=25, goldPrice=5, color1=118, color2=118, itemType="Shirt"), # Sapphire Blue Camellia Top
                     ShopItem(itemId=1400, price=25, goldPrice=5, color1=206, color2=206, itemType="Skirt"), # Raven Black Camellia Skirt
                     ShopItem(itemId=3782, price=15, goldPrice=3, color1=99, color2=99, itemType="Shoes"), # Papyrus Tan Camellia Boots
