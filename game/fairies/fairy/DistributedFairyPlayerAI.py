@@ -310,3 +310,18 @@ class DistributedFairyPlayerAI(DistributedFairyBaseAI):
         fromId = self.doId
 
         self.air.sendUpdateToChannelFrom(self, channelId, "setWhisperSCEmoteFrom", fromId, [fromId, emoteId])
+
+    def removeFromInventory(self, invId, itemId):
+
+        self.air.mongoInterface.mongodb.fairies.update_one(
+            {"_id": self.doId},
+                {
+                    "$pull": {
+                        "avatar.items": {
+                            "inv_id": invId
+                        }
+                    }
+                }
+        )
+
+        self.air.inventoryManager.sendUpdateToAvatarId(self.doId, "wardrobeRemove", [0, invId])
