@@ -315,3 +315,38 @@ COLOR_IDS = {
     "Pink": 498,
     "Any Color": 499,
 }
+
+ITEM_TYPES = [
+    "Shirt",       # 0
+    "Belt",        # 1
+    "Skirt",       # 2
+    "WristItem",   # 3
+    "HeadItem",    # 4
+    "Necklace",    # 5
+    "AnkleItem",   # 6
+    "Shoes",       # 7
+    "Eyes",        # 8
+    "Face",        # 9
+    "HairFront",   # 10
+    "HairBack",    # 11
+    "Wings",       # 12
+    "Furniture",   # 13
+    "Lamp",        # 14
+    "Decoration",  # 15
+]
+
+def get_item_type(itemId: int) -> str:
+    if itemId <= 0:
+        raise ValueError(f"Invalid item_id: {itemId}")
+    
+    bucket = itemId // 500
+    
+    # Handle the extended prefix case (e.g. 1000100 -> 100)
+    if bucket >= len(ITEM_TYPES):
+        itemId = int(str(itemId)[1:])
+        bucket = itemId // 500
+    
+    if bucket >= len(ITEM_TYPES):
+        raise ValueError(f"Invalid item_id: {itemId}")
+    
+    return ITEM_TYPES[bucket]
