@@ -444,8 +444,6 @@ class DistributedFairyPlayerAI(DistributedFairyBaseAI):
         restore_task.slotIndex = slotIndex
 
     def consumePouchItem(self, itemId, amount) -> None:
-        avatar = self.air.doId2do.get(self.doId)
-
         baked = BAKED_ITEMS.get(itemId)
         if not baked:
             return
@@ -460,7 +458,7 @@ class DistributedFairyPlayerAI(DistributedFairyBaseAI):
             # Calls _handleAuraSweet, _handleSkinSweet, or _handleWingSweet
             # depending on sweet_type. Add new types by adding a matching method.
             handler = getattr(self, f"_handle{sweet_type.capitalize()}Sweet")
-            handler(itemId, avatar)
+            handler(itemId, self)
 
         self.sendUpdateToAvatarId(self.doId, "setItemEvent", [itemId, amount, 0, 0])
         self.air.inventoryManager.removeIngredientsFromPouch(self.doId, itemId, amount)
